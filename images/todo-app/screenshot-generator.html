@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Screenshot Generator</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f6fa;
+            margin: 0;
+        }
+        
+        .app-container {
+            background: white;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .app-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .app-input {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .app-input input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        .app-input button {
+            background: #4070f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+        
+        .app-filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        
+        .filter-options span {
+            margin-right: 10px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .filter-options span.active {
+            color: #4070f4;
+        }
+        
+        .clear-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .task-item {
+            background: #f8f8f8;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .task-checkbox {
+            margin-right: 10px;
+        }
+        
+        .task-text {
+            flex: 1;
+        }
+        
+        .completed {
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .task-actions {
+            color: #666;
+        }
+        
+        .instructions {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="app-container">
+            <div class="app-header">
+                <div class="app-title">Todo App</div>
+                <div class="app-home">
+                    <a href="#" style="color: #666; text-decoration: none;">
+                        <i>⌂</i> Back
+                    </a>
+                </div>
+            </div>
+            
+            <div class="app-input">
+                <input type="text" placeholder="Add a new task">
+                <button>+</button>
+            </div>
+            
+            <div class="app-filters">
+                <div class="filter-options">
+                    <span class="active">All</span>
+                    <span>Pending</span>
+                    <span>Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+            </div>
+            
+            <ul class="task-list">
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <div class="task-text">Complete portfolio project</div>
+                    <div class="task-actions">⋮</div>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox" checked>
+                    <div class="task-text completed">Create Todo App</div>
+                    <div class="task-actions">⋮</div>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <div class="task-text">Learn React framework</div>
+                    <div class="task-actions">⋮</div>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" class="task-checkbox">
+                    <div class="task-text">Apply for web developer jobs</div>
+                    <div class="task-actions">⋮</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <p>Take a screenshot of this Todo App mockup and save it as "todo-screenshot.png" in the images/todo-app folder</p>
+        </div>
+    </div>
+</body>
+</html> 
